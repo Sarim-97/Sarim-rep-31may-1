@@ -30,6 +30,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: deploy surge
-        run: surge ./ wanting-touch.surge.sh --token {{ secrets.SURGE_NAME }}
+        run: surge ./ wanting-touch.surge.sh --token ${{ secrets.SURGE_NAME }}
           echo Add other actions to build,
           echo test, and deploy your project.
